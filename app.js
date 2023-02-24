@@ -1,7 +1,13 @@
-const amount = 11
+//modules
+const nameFile = require('./names')
+const nameList = nameFile.names
 
-if(amount > 10){
-    console.log('large number')
-}else{
-    console.log('small number')
+const sayHi = require('./utils')
+
+
+
+
+
+for(x=0; x < nameList.length; x++){
+    sayHi(nameList[x])
 }
