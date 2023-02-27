@@ -4,6 +4,7 @@
 //Review later: HTTPS 
 
 const os = require('os')
+const path = require('path')
 
 //return system uptime
 console.log(`Current user: ${os.userInfo().username}`)
@@ -24,5 +25,20 @@ const currentOS = {
 }
 
 console.log(currentOS)
+
+//playing with path module
+ console.log(path.sep)
+
+ const filepath = path.join('/content' , 'subfolder', 'test.txt')
+ console.log(filepath)
+
+ baseName = path.basename(filepath)
+
+ console.log(baseName)
+
+ absolute = path.resolve(__dirname, 'content', "subfolder", 'test.txt')
+
+ console.log(absolute)
+
 
 
